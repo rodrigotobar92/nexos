@@ -50,6 +50,10 @@
   border-radius: 999px;
 }
 
+.badge.bg-danger {
+  background-color: #fe6a34 !important;
+}
+
 /* Destinos de Ensueño */
 .dream-card {
   transition: all 0.5s ease;
