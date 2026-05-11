@@ -267,8 +267,8 @@ body {
 }
 
 .vdm-btn-primary-alt:hover {
-    background-color: #e55a29;
-    color: white;
+    background-color: #FFF;
+    color: #fe6a34;
 }
 
 /* Botón esquema blanco */
@@ -283,7 +283,7 @@ body {
 
 .vdm-btn-outline-light-formal:hover {
     background-color: white;
-    color: #00408b;
+    color: #fe6a34;
 }
 
 /* --- Newsletter Formal --- */
@@ -308,7 +308,7 @@ body {
 }
 
 .vdm-btn-dark:hover {
-    background-color: #000;
+    background-color: #e55a29;
     color: white;
 }
 

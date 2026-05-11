@@ -128,16 +128,40 @@
 .text-primary { color: #fe6a34 !important; }
 .text-warning { color: #fe6a34 !important; }
 
+.hero-content .text-white-50 {
+    background:
+        radial-gradient(circle at 25% 50%, rgba(68,199,255,.22), transparent 60%),
+        linear-gradient(90deg, rgba(0,64,139,.85) 0%, rgba(0,87,184,.65) 50%, rgba(0,64,139,.40) 100%);
+    color: #ffffff !important;
+    display: block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    opacity: 1 !important;
+}
+
+.dream-card .text-white-50.mb-3 {
+    background-color: #0057b8;
+    color: #ffffff !important;
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 4px;
+    opacity: 1 !important;
+}
+
 /* ===== Responsive ===== */
 .dream-card { height: 500px; }
 
 @media (max-width: 767.98px) {
-    .dream-card { height: 320px !important; }
+    .dream-card { height: 400px !important; }
     .hero-content h1 { font-size: 1.75rem; }
     .newsletter { min-height: auto; padding: 3rem 1rem; }
+    .dream-card .info-box { font-size: 0.85rem; }
+    .dream-card h3.display-6 { font-size: 1.5rem; }
 }
 
 @media (max-width: 575.98px) {
-    .dream-card { height: 260px !important; }
+    .dream-card { height: 420px !important; }
     .hero-content h1 { font-size: 1.4rem; }
+    .dream-card .d-flex.justify-content-between { flex-direction: column; gap: 0.5rem; }
+    .dream-card .text-end { text-align: left !important; }
 }
