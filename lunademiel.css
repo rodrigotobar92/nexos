@@ -46,6 +46,19 @@ img:hover {
   position: relative;
 }
 
+.contacto .mb-4 {
+    background:
+        radial-gradient(circle at 25% 50%, rgba(68,199,255,.22), transparent 60%),
+        linear-gradient(90deg, rgba(0,64,139,.85) 0%, rgba(0,87,184,.65) 50%, rgba(0,64,139,.40) 100%);
+    color: #ffffff !important;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+}
+
 .contacto::before {
   content: "";
   position: absolute;
