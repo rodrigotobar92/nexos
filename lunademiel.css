@@ -77,6 +77,10 @@ img:hover {
   object-fit: cover;
 }
 
+.bg-warning {
+    background-color: #fe6a34 !important;
+}
+
 .btn-warning,
 .btn-warning:focus {
   background-color: #fe6a34 !important;
