@@ -51,6 +51,7 @@
 }
 
 .badge.bg-danger {
+  --bs-danger-rgb: 254, 106, 52;
   background-color: #fe6a34 !important;
 }
 
