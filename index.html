@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Nexos | Descubre el mundo con nosotros</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet"/>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Custom CSS -->
+    <link href="inicio.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- TopNavBar -->
+<nav class="navbar navbar-expand-xl navbar-custom sticky-top">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand-custom d-flex align-items-center gap-2" href="index.html"><img src="https://img.icons8.com/fluency/48/marker.png" alt="Nexos" class="navbar-logo"/>Nexos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mx-auto gap-xl-3 mt-3 mt-xl-0">
+                <li class="nav-item"><a class="nav-link-custom nav-link-active" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="vuelos.html">Vuelos</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="paquete.html">Paquetes</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="Deporte y Concierto.html">Deportes y Conciertos</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="circuitos.html">Circuitos y Cruceros</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="lunademiel.html">Luna de Miel</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="asesoriamigratoria.html">Asesoría Migratoria</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="renta.html">Renta de Autos</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="historia.html">Quienes Somos</a></li>
+            </ul>
+            <div class="d-flex align-items-center mt-3 mt-xl-0">
+                <button class="btn-contact">Contáctanos</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1484821582734-6c6c9f99a672?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D" alt="stunning tropical beach with white sand turquoise water and palm trees at sunset"/>
+        <div class="hero-gradient"></div>
+    </div>
+    <div class="container hero-content">
+        <div class="row align-items-center g-5">
+            <div class="col-12 col-md-6">
+                <h1 class="hero-title mb-4">Descubre el mundo con nosotros</h1>
+                <p class="hero-subtitle">Cotiza tus boletos al mejor precio</p>
+                <div class="hero-icons d-flex gap-3 mt-4">
+                    <span class="material-symbols-outlined">flight_takeoff</span>
+                    <span class="material-symbols-outlined">hotel</span>
+                    <span class="material-symbols-outlined">explore</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="glass-card">
+                    <h3>Cotiza tu Viaje</h3>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <label class="form-label-custom">Origen</label>
+                                <input class="form-input-custom" placeholder="Ciudad de salida" type="text"/>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label-custom">Destino</label>
+                                <input class="form-input-custom" placeholder="Ciudad de llegada" type="text"/>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label-custom">Pasajeros</label>
+                                <select class="form-input-custom">
+                                    <option>1 Adulto</option>
+                                    <option>2 Adultos</option>
+                                    <option>Familia</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label-custom">Nombre</label>
+                                <input class="form-input-custom" placeholder="Tu nombre completo" type="text"/>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label-custom">Fecha Ida</label>
+                                <input class="form-input-custom" type="date"/>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label-custom">Fecha Regreso</label>
+                                <input class="form-input-custom" type="date"/>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label-custom">Telefono</label>
+                                <input class="form-input-custom" placeholder="+503 0000-0000" type="tel"/>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label-custom">Email</label>
+                                <input class="form-input-custom" placeholder="correo@ejemplo.com" type="email"/>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <button class="btn-search-flights" type="button">Buscar vuelos</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Packages -->
+<section class="section-packages">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Paquetes Destacados</h2>
+            <hr class="section-divider"/>
+        </div>
+        <div class="row g-4">
+            <!-- San Andres -->
+            <div class="col-12 col-md-4">
+                <div class="package-card">
+                    <div class="package-img-wrapper">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg2T2ElbOvUNEgkOYtW4mOAWY6UAEtcYwEGuIw3vdtc2bFKX-CEi1YP4F_7PUBcrP_GIV4f4n2SJ88nXLvCAczHPoe68fUgwYzFeEpcON5fD0FHxyKtZpITCb5Nc_VMwY8FEkd72YhTzgeLmlJxxwPXFXCcBNS5JIqXSSxbdVt1BZaaOCeVv9rc4f6vFIkiXrAe5Wh2FuTayO3Jk3lc_LRCjWhGebXoJ3JoEtOuBjNws_8j9q-LuQ5JID1d9QWzT7n3B5qGWC6Ro0" alt="aerial view of San Andres island Caribbean sea"/>
+                        <div class="package-price">$485</div>
+                    </div>
+                    <div class="package-body">
+                        <h4>San Andres</h4>
+                        <p class="package-duration">
+                            <span class="material-symbols-outlined">schedule</span> 05 dias | 04 noches
+                        </p>
+                        <button class="btn-ver-mas">Ver mas</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Cartagena -->
+            <div class="col-12 col-md-4">
+                <div class="package-card">
+                    <div class="package-img-wrapper">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOxKOPffXBQWkwq6znJhVqrQwaJusr0WdV7paw8KsJ-3gwsHiu9rnxbDv1Q381hgW3ScnMYdGL_maTtA9lU-O4Q9fKMnieyYog7uFZ0xf_432Xj2U_sg3TS3yq2G40AnYE-EsKzz3Yz1Wi8AH23cjmsCaC0SFCgCw68EOw2gL-Yw1Vpvv0reG1EOQj7RzZfR1VJYnOQb4kbI3UYLh0Pfd3O-9nBcY4ZGBifsIV9ITyPpqWFnZk2ycmGucigym2YX0Z9h-Hu8JGDXc" alt="colorful colonial streets of Cartagena Colombia"/>
+                        <div class="package-price">$255</div>
+                    </div>
+                    <div class="package-body">
+                        <h4>Cartagena</h4>
+                        <p class="package-duration">
+                            <span class="material-symbols-outlined">schedule</span> 05 dias | 04 noches
+                        </p>
+                        <button class="btn-ver-mas">Ver mas</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Roatan -->
+            <div class="col-12 col-md-4">
+                <div class="package-card">
+                    <div class="package-img-wrapper">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs8ucDRKsUUSFzpgIzeEM9I6fgZrFF3_IJbFYPoaAFH7z7ITRWdyPvKeqTQko_34T510Vm4kUb3CgEiI_zgimTodcil8sfgSjREyIjCplyY2N6DGCyGRvHQ7JmUMswC4RhFyr08AqXlOopaeomSxBG8WMG1ERm-h6KpC-MoEnTbysriSjNZPT5WAjZ_O6qy1kW8NcGy6_caNa63dpLUWseMn9HHgC2jZJV2GqaRBG7yCukBCOFcIzbAIdkMWYKN6AR1a6SXrAInk4" alt="crystal clear water and coral reefs at Roatan island"/>
+                        <div class="package-price">$855</div>
+                    </div>
+                    <div class="package-body">
+                        <h4>Roatan</h4>
+                        <p class="package-duration">
+                            <span class="material-symbols-outlined">schedule</span> 05 dias | 04 noches
+                        </p>
+                        <button class="btn-ver-mas">Ver mas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="disclaimer-text text-center">*Precios sujetos a disponibilidad y cambios sin previo aviso.</p>
+    </div>
+</section>
+
+<!-- Flight Deals -->
+<section class="section-flights">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-3">
+            <div class="flights-header">
+                <h2>Vuelos a precios especiales</h2>
+                <p>Las mejores ofertas para tu proximo destino internacional</p>
+            </div>
+            <a class="explore-link" href="#">
+                Explorar todos los destinos <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </div>
+        <div class="row g-4">
+            <!-- Bogota -->
+            <div class="col-12 col-md-4">
+                <div class="flight-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz7JuO_9c4okPJ7Mzi03v0JV_ycWw1j6xW7IcOO5p-ir0ZsJB8Rd36bz3jjgkztYpThoZmZV76SPFIGN7RJlVcYcLvdWeVqS2VhICYNDPXMEu3fNMzxXnvHaQWrNQN39kweRdhYyiW3RZH5ZOzjyavba7StEHGAc4Y9YZq4qqe2UC-Kb_DL705c9wXMiRBRbDpN-5qfQ6apDrPA0eP-CBFqd0gJOwPKv1vPiU4DvQaMjrOLLNFTSwl9ZP5NBSMjog-v1eThzMcpSQ" alt="panoramic city view of Bogota Colombia"/>
+                    <div class="flight-card-overlay"></div>
+                    <div class="flight-card-price">$243</div>
+                    <div class="flight-card-city">Bogota</div>
+                </div>
+            </div>
+            <!-- Madrid -->
+            <div class="col-12 col-md-4">
+                <div class="flight-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqRS1xJDQ2LIfjA6LuZkRJ-1BvJMaT3Lj2kmtfqjRW0E1oI66r0tjHezOSKsgFN0ELubZ-wNdW8wsZx6bnJkZqc2_aTH9-4MQQSSXwdIwfY9OiAimdu_vHaQf7qRW3vQEEtPiH6INT7t6UPHyGZRn3RWXkiubQ9QaPkwaxdyW8y_hqQJ-fJdCr_-bMdM1fED0PPS6fToIVlNu0VdBNAQ1pCUtiAw8y3ca7gzQqZngCOy7CGauOxSAdZCnr-ZYrQs4c0jcprDvYqXY" alt="The Plaza de Cibeles in Madrid at night"/>
+                    <div class="flight-card-overlay"></div>
+                    <div class="flight-card-price">$946</div>
+                    <div class="flight-card-city">Madrid</div>
+                </div>
+            </div>
+            <!-- New York -->
+            <div class="col-12 col-md-4">
+                <div class="flight-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA641oL9ITWvuFndjpAlEb9tsWd3iDoogx8tmwU-nlqroRAOcxlepdc5wrKlNhhEoripxFRl1Zjd7nWVQqYobRdcWuV78MBBpsO1F64oxzf3SlFTntYw6hsrl6uJs_OXsleN0fH7Tfhj2RNOTwIXGPtTPOw8CXcSZW2AS_WBs26sYJwOpPQoGs5qpV4MsX9jqmVRyn__rBCYYWt9-E6mocohMUWDUxwhoYbYa5i8icpGkUTJ1jsAYs2_LRGRifslWxKLoueV6-qq7A" alt="Times Square in New York City"/>
+                    <div class="flight-card-overlay"></div>
+                    <div class="flight-card-price">$312</div>
+                    <div class="flight-card-city">New York</div>
+                </div>
+            </div>
+            <!-- Los Angeles -->
+            <div class="col-12 col-md-4">
+                <div class="flight-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIbLZttfNEXdEiYy4XK1vd1olSZZV8am-LCPx-2VTQEc1G7Fbe-xRgiDuuoHSwwRbBMkGVNUTEDSJ9rg9dg2ev3WNgY_aUkQUhIw4BsHPZ82dOZoDPHD0KJ2YU1RZebT_pV-3FM8tUJ8VY3Jl2MXLodCvlLFsNnikD6Lz1-KDiA_NlOXPBaK3BPyjnlL_RwkcU4yrW-pT8gxrmtIlvvFkR4DngB5ErnLB_7MOE22NgJl1k6-_XVFXBz-U8zDMrSbrohL5IHLRfgOg" alt="the Santa Monica pier at sunset in Los Angeles"/>
+                    <div class="flight-card-overlay"></div>
+                    <div class="flight-card-price">$311</div>
+                    <div class="flight-card-city">Los Angeles</div>
+                </div>
+            </div>
+            <!-- Medellin -->
+            <div class="col-12 col-md-4">
+                <div class="flight-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbaf6JAtKVbo67I2GUr4acQ6dWAIcBhWWVJP2XWINfxEdmRlAJ4LGQkvwjAEUuqotUKuPVl-JWDE40m6BRE1c2F57lgdWH6zDt24gPYyAjjXJ1WOdZM-3rDOoroIFsCs66L-Or9tsy9xkk1TGKVrzqhMTzy4mzE5RPq2RTR6SAfhBW7WXRQOQDzqtjsyFwgP4vr_mXiEzEHE7YbEQaiQWj_Fs14yPZm7r6uDGvy5UgXZubYJXvHnTeMcCszXGEJfzqkzt8IGt5iyE" alt="the modern skyline of Medellin Colombia"/>
+                    <div class="flight-card-overlay"></div>
+                    <div class="flight-card-price">$332</div>
+                    <div class="flight-card-city">Medellin</div>
+                </div>
+            </div>
+            <!-- Washington -->
+            <div class="col-12 col-md-4">
+                <div class="flight-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNPTbUB_Q-3GdixF45kQsLQsBBgC6OojNS6bpItR7Jv030xEACozNMaDEiqPcDeH2MNhYIfcMKNp5OokNFb-e_PJR8HwFVXPB1i1rovV82ih-mSRlVMEyxoc2SpUes2lp4DeuWLFFEUPrkBMXD609cQ2nEMnLI1vKKFW12IQso1Uz6wj7tF75hl5zus1GnHMufR00qbPojZsrTmdZe3UJ4H5PvnZ12BuS76bDS7IeU7jwQV9KRk8jMwaLlwqnNYHiw-Dw8wjdlJIM" alt="Washington Monument reflecting in the pool at sunset"/>
+                    <div class="flight-card-overlay"></div>
+                    <div class="flight-card-price">$364</div>
+                    <div class="flight-card-city">Washington</div>
+                </div>
+            </div>
+        </div>
+        <p class="flights-disclaimer text-center">Tarifas ida y vuelta con impuestos incluidos. Aplican restricciones.</p>
+    </div>
+</section>
+
+<!-- European Circuits -->
+<section class="section-europe">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title-europe">Circuitos por Europa</h2>
+            <p class="section-subtitle-europe">Explora la historia, cultura y gastronomia del viejo continente con itinerarios disenados para ti.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="europe-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN7ek28FPJ98fqtYVd8RGcnQpsvvSssBE6CWUoTO5sLMtGOtgXppzWwf4GFx8glpHdtYBLsYDEeuIKYUB6-4k0B-0c2UGKyJczE5DCAI2OzQFiMhKZ821IB5IoMOSqZEyWAaZO7G4CZ9nwkgnK_aGFtqVq7l-8PGaiQQha8TPqLHB4UwB_PwOQMfczhbn6iGe0q3o1FppYbEjWykPUnoCqepDFNXQlvSoIsrED2bxzx-NA1YZt_6MfJQVJadaLD9-FIafJuVagX5w" alt="Venice Italy canal with gondola boat"/>
+                    <div class="europe-card-overlay"></div>
+                    <div class="europe-card-info">
+                        <h3>Venecia</h3>
+                        <p>Aventura Romantica</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="europe-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzg--ho7nq_kbyhns2rL_fulJHLWZ7P825vTNt5jmx5UfSW0JzwLVEjNo4018E9y56mC4ALv3XRGa5V9ay4DQR2pvtI1wzpPRXsAu3v-5w7iM6gzHr3N3DU5B3ezrU_MxiAymsDumPxBnSdPAtXt3erdBviO-VHkXoI8_UU4_6f5cLh5Ke1JT0flDQ8W_zeQZXFFb_VumVJsrIkdafd_YA1R4ucUzXJlEENt5NO6D7P243iYllOfGFmX8N_V_DRvH8t9v55ifS8lE" alt="Park Guell in Barcelona Spain"/>
+                    <div class="europe-card-overlay"></div>
+                    <div class="europe-card-info">
+                        <h3>Barcelona</h3>
+                        <p>Arte y Playa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="europe-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV6wj8K_fu2PycVuK7eZhGfC7xS3Eg7Y0z1fyClkrMmJtes7e39edh2ThaYyh_FU655F15QAi1kXvcx3W8ios6t_wTaOKY1OyTWA5KTKeSRms4IQz4yey_7HZszTRe2i7M6Pj0vYONN6jbUhPjPv5CtGB0C49944X3jAj0QST-Qu5Mlhkk_ZIQ5C6g3BogJDtiKgrNQXElUEntXS1sbAVV5TJb6G1jFfnmox8rT7sH_MPI1QH66_wdVnDAWJFQF3hco4bwR11SaAM" alt="Lisbon Portugal scenic view of yellow tram"/>
+                    <div class="europe-card-overlay"></div>
+                    <div class="europe-card-info">
+                        <h3>Lisboa</h3>
+                        <p>Encanto Historico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="section-newsletter">
+    <div class="newsletter-bg">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ct8b40LSQU73ArjCrGox6TwbImRBFmchFo2pT0N3y6i_h1Uh4Zo-Su76p1pr5dOwDBZUsMz3w1QRF8Yb9DyILNg3i-Tgex7AP64wImLcNcJvgUEI36feSeeY7Vz18B_4UAihfTxLcIA9ogLrfWShiqQTgl96Gsg9oe7V08QwLWkFvZpzfd8f3e94PsrVYYSgMwgl2xJWOMXtV_wPwxiJiOgmrudzG0SLFzOVzTVRFCLpgoryJvnK6w_lvQo5ImxYtapr-LMQKx8" alt="beautiful mountain landscape with alpine lake"/>
+        <div class="newsletter-overlay"></div>
+    </div>
+    <div class="container newsletter-content text-center">
+        <h2>No te pierdas promociones exclusivas!</h2>
+        <p>Unete a nuestra comunidad y recibe las mejores ofertas de viaje directamente en tu correo.</p>
+        <form class="newsletter-form d-flex flex-column flex-md-row gap-3">
+            <input class="newsletter-input" placeholder="Nombre" type="text"/>
+            <input class="newsletter-input" placeholder="Correo Electronico" type="email"/>
+            <input class="newsletter-input" placeholder="Telefono" type="tel"/>
+            <button class="btn-subscribe" type="button">Suscribirme</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-custom">
+    <div class="footer-content">
+        <div class="row g-5">
+            <div class="col-12 col-md-4">
+                <span class="footer-brand d-flex align-items-center gap-2"><img src="https://img.icons8.com/fluency/48/marker.png" alt="Nexos" class="footer-logo"/>Nexos</span>
+                <p class="footer-description">Tu puerta de entrada a los mejores destinos del planeta. Ofrecemos experiencias personalizadas y tarifas competitivas.</p>
+                <div class="footer-social d-flex gap-3">
+                    <span class="material-symbols-outlined">share</span>
+                    <span class="material-symbols-outlined">mail</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="footer-heading">Nuestra Empresa</h5>
+                        <a class="footer-link" href="#">Quienes Somos</a>
+                        <a class="footer-link" href="asesoriamigratoria.html">Asesoria Migratoria</a>
+                        <a class="footer-link" href="#">Renta de Autos</a>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="footer-heading">Servicios</h5>
+                        <a class="footer-link" href="#">Luna de Miel</a>
+                        <a class="footer-link" href="#">Cruceros</a>
+                        <a class="footer-link" href="#">Seguros</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5 class="footer-heading">Nuestras Oficinas</h5>
+                <div class="footer-office">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>San Salvador Office: Edificio World Trade Center, San Salvador.</p>
+                </div>
+                <div class="footer-office">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>Santa Ana Office: Centro Comercial Metrocentro, Santa Ana.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Nexos. Todos los derechos reservados.
+    </div>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

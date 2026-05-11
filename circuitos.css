@@ -1,0 +1,143 @@
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+}
+
+.hero img {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.hero .overlay {
+  background:
+    radial-gradient(circle at 25% 30%, rgba(68,199,255,.18), transparent 28%),
+    linear-gradient(90deg, rgba(4,22,63,.86) 0%, rgba(4,22,63,.56) 45%, rgba(4,22,63,.22) 100%);
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Circuitos Estrella Cards */
+.circuit-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.circuit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.img-hover {
+  transition: transform 0.5s ease;
+}
+
+.circuit-card:hover .img-hover {
+  transform: scale(1.1);
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+}
+
+/* Destinos de Ensueño */
+.dream-card {
+  transition: all 0.5s ease;
+}
+
+.dream-card:hover .img-hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3), transparent);
+}
+
+.info-box {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(6px);
+}
+
+/* Newsletter Section */
+.newsletter {
+  min-height: 500px;
+}
+
+.newsletter .overlay {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(2px);
+}
+
+.newsletter input::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.newsletter input {
+  color: #fff;
+}
+
+/* Footer personalizado */
+.footer {
+  background-color: #0f172a; /* similar a bg-slate-950 */
+}
+
+.footer-link {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fe6a34;
+  transform: translateX(5px);
+}
+
+.footer-icon {
+  color: #64748b;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #fe6a34;
+}
+
+.btn-warning,
+.btn-warning:focus {
+  background-color: #fe6a34 !important;
+  border-color: #fe6a34 !important;
+  color: #ffffff !important;
+}
+
+.btn-warning:hover {
+  background-color: #e55a24 !important;
+  border-color: #e55a24 !important;
+  color: #ffffff !important;
+}
+
+.text-primary { color: #fe6a34 !important; }
+.text-warning { color: #fe6a34 !important; }
+
+/* ===== Responsive ===== */
+.dream-card { height: 500px; }
+
+@media (max-width: 767.98px) {
+    .dream-card { height: 320px !important; }
+    .hero-content h1 { font-size: 1.75rem; }
+    .newsletter { min-height: auto; padding: 3rem 1rem; }
+}
+
+@media (max-width: 575.98px) {
+    .dream-card { height: 260px !important; }
+    .hero-content h1 { font-size: 1.4rem; }
+}

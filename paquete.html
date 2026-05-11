@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viajes del Mundo - Paquetes Vacacionales</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="inicio.css" rel="stylesheet"/>
+  <link href="paquete.css" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-xl navbar-custom sticky-top">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand-custom d-flex align-items-center gap-2" href="index.html"><img src="https://img.icons8.com/fluency/48/marker.png" alt="Nexos" class="navbar-logo"/>Nexos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mx-auto gap-xl-3 mt-3 mt-xl-0">
+                <li class="nav-item"><a class="nav-link-custom" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="vuelos.html">Vuelos</a></li>
+                <li class="nav-item"><a class="nav-link-custom nav-link-active" href="paquete.html">Paquetes</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="Deporte y Concierto.html">Deportes y Conciertos</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="circuitos.html">Circuitos y Cruceros</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="lunademiel.html">Luna de Miel</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="asesoriamigratoria.html">Asesoría Migratoria</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="renta.html">Renta de Autos</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="historia.html">Quienes Somos</a></li>
+            </ul>
+            <div class="d-flex align-items-center mt-3 mt-xl-0">
+                <button class="btn-contact">Contáctanos</button>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="paquetes">
+    <div class="container">
+      <div class="hero-contenido">
+        <span class="hero-badge">PROMOCIÓN EXCLUSIVA</span>
+        <h1 class="hero-title">Semana Santa se<br>vive viajando</h1>
+        <p class="hero-text">Descubre destinos paradisíacos y crea memorias inolvidables con nuestros paquetes todo incluido diseñados para la aventura.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#destacados" class="btn btn-naranja">Explorar ofertas <i class="bi bi-arrow-right-short"></i></a>
+          <a href="#promo" class="btn btn-outline-hero">Solicitar cotización</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion-blanca" id="destacados">
+    <div class="container">
+      <div class="encabezado-seccion">
+        <div>
+          <span class="mini-etiqueta">Selección Premium</span>
+          <h2 class="titulo-seccion">Destacados de Temporada</h2>
+        </div>
+        <div class="d-flex gap-2">
+          <button class="circulo-nav"><i class="bi bi-chevron-left"></i></button>
+          <button class="circulo-nav"><i class="bi bi-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="card-viaje">
+            <div class="card-img-grande" style="background-image:url('images/roatan.jpg');">
+              <span class="badge-card">3 días / 2 noches</span>
+            </div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">Roatán</h3>
+              <p class="card-texto">Disfruta playas turquesa y paisajes caribeños con un paquete perfecto para descansar.</p>
+              <div class="card-footer-custom">
+                <p class="precio">$899</p>
+                <a href="#" class="link-card">Ver detalle <i class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="card-viaje">
+            <div class="card-img-grande" style="background-image:url('images/cartagena.jpg');">
+              <span class="badge-card">4 días / 3 noches</span>
+            </div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">Cartagena</h3>
+              <p class="card-texto">Historia, cultura y mar en una ciudad vibrante ideal para viajes románticos o familiares.</p>
+              <div class="card-footer-custom">
+                <p class="precio">$549</p>
+                <a href="#" class="link-card">Ver detalle <i class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article class="card-viaje">
+            <div class="card-img-grande" style="background-image:url('images/san-andres.jpg');">
+              <span class="badge-card">5 días / 4 noches</span>
+            </div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">San Andrés</h3>
+              <p class="card-texto">Vive la belleza del mar de siete colores con alojamiento y asistencia incluidos.</p>
+              <div class="card-footer-custom">
+                <p class="precio">$725</p>
+                <a href="#" class="link-card">Ver detalle <i class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fondo-claro" id="destinos">
+    <div class="container">
+      <div class="subtitulo-centro">
+        <h2 class="titulo-seccion">Explora todos nuestros destinos</h2>
+        <p>Encuentra opciones para vacaciones familiares, escapadas románticas o aventuras internacionales con la misma línea visual de tu sitio de turismo y conciertos.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <article class="card-destino">
+            <div class="card-img-pequena" style="background-image:url('images/destino-1.jpg');"><span class="badge-card-right">Destacado</span></div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">Roatán</h3>
+              <p class="card-texto">Ideal para una escapada al Caribe con actividades acuáticas.</p>
+              <div class="iconos-info"><span><i class="bi bi-calendar-event"></i> 3 días</span><span><i class="bi bi-geo-alt"></i> Honduras</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <article class="card-destino">
+            <div class="card-img-pequena" style="background-image:url('images/destino-2.jpg');"><span class="badge-card-right">Oferta</span></div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">Punta Cana</h3>
+              <p class="card-texto">Resorts todo incluido y playas amplias para descansar.</p>
+              <div class="iconos-info"><span><i class="bi bi-calendar-event"></i> 4 días</span><span><i class="bi bi-geo-alt"></i> R. Dominicana</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <article class="card-destino">
+            <div class="card-img-pequena" style="background-image:url('images/destino-3.jpg');"><span class="badge-card-right">Popular</span></div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">Cusco</h3>
+              <p class="card-texto">Historia, montaña y una experiencia cultural muy completa.</p>
+              <div class="iconos-info"><span><i class="bi bi-calendar-event"></i> 5 días</span><span><i class="bi bi-geo-alt"></i> Perú</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <article class="card-destino">
+            <div class="card-img-pequena" style="background-image:url('images/destino-4.jpg');"><span class="badge-card-right">Nuevo</span></div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">Panamá</h3>
+              <p class="card-texto">Ciudad moderna con compras, gastronomía y conexiones rápidas.</p>
+              <div class="iconos-info"><span><i class="bi bi-calendar-event"></i> 3 días</span><span><i class="bi bi-geo-alt"></i> Panamá</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <article class="card-destino">
+            <div class="card-img-pequena" style="background-image:url('images/destino-5.jpg');"><span class="badge-card-right">Destacado</span></div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">Cartagena</h3>
+              <p class="card-texto">Perfecta para turismo histórico y playas cercanas.</p>
+              <div class="iconos-info"><span><i class="bi bi-calendar-event"></i> 4 días</span><span><i class="bi bi-geo-alt"></i> Colombia</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <article class="card-destino">
+            <div class="card-img-pequena" style="background-image:url('images/destino-6.jpg');"><span class="badge-card-right">Oferta</span></div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">Medellín</h3>
+              <p class="card-texto">Una ciudad dinámica con clima agradable y mucha vida urbana.</p>
+              <div class="iconos-info"><span><i class="bi bi-calendar-event"></i> 4 días</span><span><i class="bi bi-geo-alt"></i> Colombia</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <article class="card-destino">
+            <div class="card-img-pequena" style="background-image:url('images/destino-7.jpg');"><span class="badge-card-right">Popular</span></div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">Cancún</h3>
+              <p class="card-texto">Playas, entretenimiento y hoteles premium frente al mar.</p>
+              <div class="iconos-info"><span><i class="bi bi-calendar-event"></i> 5 días</span><span><i class="bi bi-geo-alt"></i> México</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <article class="card-destino">
+            <div class="card-img-pequena" style="background-image:url('images/destino-8.jpg');"><span class="badge-card-right">Nuevo</span></div>
+            <div class="card-cuerpo">
+              <h3 class="card-titulo">Riviera Maya</h3>
+              <p class="card-texto">Cenotes, arqueología y resorts de alto nivel en un solo viaje.</p>
+              <div class="iconos-info"><span><i class="bi bi-calendar-event"></i> 5 días</span><span><i class="bi bi-geo-alt"></i> México</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo" id="promo">
+    <div class="container">
+      <h2>¡Recibe ofertas exclusivas en tu correo</h2>
+      <p>Únete a más de 50,000 viajeros que reciben nuestras mejores tarifas antes que nadie..</p>
+      <div class="suscripcion-box">
+        <form class="row g-3 justify-content-center align-items-center">
+          <div class="col-md-7">
+            <input type="email" class="form-control" placeholder="Tu correo electrónico">
+          </div>
+          <div class="col-md-4 d-grid">
+            <button type="submit" class="btn btn-suscribir">Suscribirme</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-custom">
+    <div class="footer-content">
+        <div class="row g-5">
+            <div class="col-12 col-md-4">
+                <span class="footer-brand d-flex align-items-center gap-2"><img src="https://img.icons8.com/fluency/48/marker.png" alt="Nexos" class="footer-logo"/>Nexos</span>
+                <p class="footer-description">Tu puerta de entrada a los mejores destinos del planeta. Ofrecemos experiencias personalizadas y tarifas competitivas.</p>
+                <div class="footer-social d-flex gap-3">
+                    <span class="material-symbols-outlined">share</span>
+                    <span class="material-symbols-outlined">mail</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="footer-heading">Nuestra Empresa</h5>
+                        <a class="footer-link" href="historia.html">Quienes Somos</a>
+                        <a class="footer-link" href="asesoriamigratoria.html">Asesoria Migratoria</a>
+                        <a class="footer-link" href="renta.html">Renta de Autos</a>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="footer-heading">Servicios</h5>
+                        <a class="footer-link" href="lunademiel.html">Luna de Miel</a>
+                        <a class="footer-link" href="circuitos.html">Cruceros</a>
+                        <a class="footer-link" href="#">Seguros</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5 class="footer-heading">Nuestras Oficinas</h5>
+                <div class="footer-office">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>San Salvador Office: Edificio World Trade Center, San Salvador.</p>
+                </div>
+                <div class="footer-office">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>Santa Ana Office: Centro Comercial Metrocentro, Santa Ana.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Nexos. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

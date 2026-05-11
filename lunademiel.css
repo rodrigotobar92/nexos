@@ -1,0 +1,87 @@
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: url('https://lh3.googleusercontent.com/aida-public/AB6AXuATW9nzu9J5hSptDVz_doTV2b20XknYVul2XvELoh3qSVv8e1STIh1QYXVij3Z9Vbg2kXQzUxDI2z7pBXtvEcDwtlxwYhFPJqlSnJQUksonxzH1-LbuSs8Kh1AaH2hGlieu0ul3FcFeZjYIE23L1HA_cYDB6zwjuNk1qj4jx7WpaCdqAaX98D30l-A4-XM-VbRasKKl8S-uivzfhWAqpgSj4ECdGB-jybn-mk1tLKH-O8xG4rSicDIe_JBWd4IxXDQvJ7WhFH4fw8Q') top center/cover no-repeat;
+}
+
+/* Oscurecer imagen */
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 25% 30%, rgba(68,199,255,.18), transparent 28%),
+    linear-gradient(90deg, rgba(4,22,63,.86) 0%, rgba(4,22,63,.56) 45%, rgba(4,22,63,.22) 100%);
+}
+
+/* Texto encima */
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mejorar imagen */
+img {
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.contacto {
+  height: 60vh;
+  background: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6OjVWjWPY1nZlHpprDZdL3GB_ltSHxHXWGoayf2ptPM5sOYY4fY76PvVhHcrASqziOXKLjL8n8KHSuJsr9njDLz5V8bbk-wcFgdif_TtLu5xa4JuqMHtr3914d6mzYROBdtiE0rqV_zwfJo1lAIcBSIXSy_-eGEMrFedYzMT5NpIhr74r1ITVZYWlT4Aga6I1Ss13MF_HpVo3DbW-JCqMsTaLgCVC6LujhRBwQdqXw0kdV4-zG3Nj3O6A29xj-X1VfKN9Av7_fAU') center/cover no-repeat;
+  position: relative;
+}
+
+.contacto::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.contacto .container {
+  position: relative;
+  z-index: 1;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-warning,
+.btn-warning:focus {
+  background-color: #fe6a34 !important;
+  border-color: #fe6a34 !important;
+  color: #ffffff !important;
+}
+
+.btn-warning:hover {
+  background-color: #e55a24 !important;
+  border-color: #e55a24 !important;
+  color: #ffffff !important;
+}
+
+.text-primary { color: #00408b !important; }
+.text-warning { color: #00408b !important; }
+/* ===== Responsive ===== */
+@media (max-width: 767.98px) {
+    .hero { min-height: 70vh; }
+    .contacto { height: auto !important; min-height: 40vh; padding: 4rem 0; }
+    .card img { height: 160px; }
+}

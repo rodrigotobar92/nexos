@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+    <head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Renta de Autos</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="inicio.css">
+<link rel="stylesheet" href="renta.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .placeholder-x {
+            position: relative;
+            background-color: #f3f3f3;
+            overflow: hidden;
+        }
+
+</style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+    <!-- TopNavBar -->
+<nav class="navbar navbar-expand-xl navbar-custom sticky-top">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand-custom d-flex align-items-center gap-2" href="index.html"><img src="https://img.icons8.com/fluency/48/marker.png" alt="Nexos" class="navbar-logo"/>Nexos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mx-auto gap-xl-3 mt-3 mt-xl-0">
+                <li class="nav-item"><a class="nav-link-custom" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="vuelos.html">Vuelos</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="paquete.html">Paquetes</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="Deporte y Concierto.html">Deportes y Conciertos</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="circuitos.html">Circuitos y Cruceros</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="lunademiel.html">Luna de Miel</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="asesoriamigratoria.html">Asesoría Migratoria</a></li>
+                <li class="nav-item"><a class="nav-link-custom nav-link-active" href="renta.html">Renta de Autos</a></li>
+                <li class="nav-item"><a class="nav-link-custom" href="historia.html">Quienes Somos</a></li>
+            </ul>
+            <div class="d-flex align-items-center mt-3 mt-xl-0">
+                <button class="btn-contact">Contáctanos</button>
+            </div>
+        </div>
+    </div>
+</nav>
+<main class="pt-20">
+
+    <!-- HERO SECTION-->
+<!-- HERO -->
+<section class="hero d-flex align-items-center text-center text-white" style="background-image: url('https://policyoptions.irpp.org/wp-content/uploads/2025/08/Wordpress-Doug-Fords-multibillion-dollar-highway-is-not-about-solving-Toronto-traffic.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Renta de Autos</h1>
+    <p class="lead">Muévete a tu ritmo en cualquier destino</p>
+    <a href="#" class="btn btn-primary mt-3">Reservar ahora</a>
+  </div>
+</section>
+<!-- SEARCH FORM-->
+<div class="container mt-n5">
+  <div class="card p-4 shadow">
+    <div class="row g-3">
+
+      <div class="col-md-3">
+        <input type="text" class="form-control" placeholder="Ciudad">
+      </div>
+
+      <div class="col-md-2">
+        <input type="date" class="form-control">
+      </div>
+
+      <div class="col-md-2">
+        <input type="date" class="form-control">
+      </div>
+
+      <div class="col-md-3">
+        <select class="form-select">
+          <option>Tipo de vehículo</option>
+          <option>Económico</option>
+          <option>SUV</option>
+        </select>
+      </div>
+
+      <div class="col-md-2">
+        <button class="btn btn-primary w-100">Buscar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<section class="py-5">
+  <div class="container">
+    <div class="container text-center my-5">
+  <div class="row">
+
+    <div class="col-12 col-md-4">
+      <i class="bi bi-tag fs-1 text-primary"></i>
+      <h5>Mejores tarifas</h5>
+      <p>Precios competitivos en todas las categorías</p>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <i class="bi bi-shield-check fs-1 text-primary"></i>
+      <h5>Cobertura total</h5>
+      <p>Viaja seguro en todo momento</p>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <i class="bi bi-cash fs-1 text-primary"></i>
+      <h5>Sin cargos ocultos</h5>
+      <p>Lo que ves es lo que pagas</p>
+    </div>
+
+  </div>
+</div>
+    <h2 class="text-center mb-5">Categorías de vehículos</h2>
+
+  <div class="row g-4">
+
+    <!-- ECONÓMICO -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/53/e3/05/53e30539e8ddd1ef2558c7dc1d82ea3c.jpg" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Chevrolet Spark</h5>
+                <p>Económico • Ciudad</p>
+                <div class="price">$25 / día</div>
+                <a href="#" class="btn btn-primary mt-3">Reservar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEDÁN -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/1200x/43/ae/ed/43aeed9761a6298093a0303d95124f37.jpg" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Honda Civic</h5>
+                <p>Sedán • Automático</p>
+                <div class="price">$30 / día</div>
+                <a href="#" class="btn btn-primary mt-3">Reservar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEDÁN NISSAN -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/1200x/b5/98/97/b598973af89c155530f597f7d5606423.jpg" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Nissan Altima</h5>
+                <p>Sedan • Estandar</p>
+                <div class="price">$40 / día</div>
+                <a href="#" class="btn btn-primary mt-3">Reservar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- LUJO -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/1200x/d5/0b/e7/d50be76e2478fcb277a5eb1de040ea9c.jpg" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Jeep</h5>
+                <p>Lujo • Familiar</p>
+                <div class="price">$65 / día</div>
+                <a href="#" class="btn btn-primary mt-3">Reservar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAMIONETA EJECUTIVA -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/736x/cc/f6/1e/ccf61e35f16a03d0c85ea69705244728.jpg" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Chevrolet Cadillac</h5>
+                <p>Lujo • Ejecutivo</p>
+                <div class="price">$100 / día</div>
+                <a href="#" class="btn btn-primary mt-3">Reservar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOYOTA HILUX -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/1200x/c1/9d/c2/c19dc26fdcdb84d06476fa82d5547106.jpg" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Toyota Hilux</h5>
+                <p>SUV • Aventura</p>
+                <div class="price">$80 / día</div>
+                <a href="#" class="btn btn-primary mt-3">Reservar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEPORTIVO 1 -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/1200x/9a/1f/f9/9a1ff99dfcdb171a40943121f3a08828.jpg" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Audi S4</h5>
+                <p>Lujo • Deportivo</p>
+                <div class="price">$80 / día</div>
+                <a href="#" class="btn btn-primary mt-3">Reservar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEPORTIVO 2 -->
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+            <img src="https://i.pinimg.com/1200x/bf/30/49/bf3049b1363e16824282df97ae9c82d8.jpg" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Chevrolet Camaro</h5>
+                <p>Lujo • Deportivo</p>
+                <div class="price">$80 / día</div>
+                <a href="#" class="btn btn-primary mt-3">Reservar</a>
+            </div>
+        </div>
+    </div>
+
+  </div>
+  </div>
+</section>
+<!-- PARTNER LOGOS -->
+<section class="container py-5 text-center">
+
+  <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 opacity-50">
+
+    <div class="bg-light" style="width:120px; height:50px;"></div>
+    <div class="bg-light" style="width:120px; height:50px;"></div>
+    <div class="bg-light" style="width:120px; height:50px;"></div>
+    <div class="bg-light" style="width:120px; height:50px;"></div>
+    <div class="bg-light" style="width:120px; height:50px;"></div>
+
+  </div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="footer-custom">
+    <div class="footer-content">
+        <div class="row g-5">
+            <div class="col-12 col-md-4">
+                <span class="footer-brand d-flex align-items-center gap-2"><img src="https://img.icons8.com/fluency/48/marker.png" alt="Nexos" class="footer-logo"/>Nexos</span>
+                <p class="footer-description">Tu puerta de entrada a los mejores destinos del planeta. Ofrecemos experiencias personalizadas y tarifas competitivas.</p>
+                <div class="footer-social d-flex gap-3">
+                    <span class="material-symbols-outlined">share</span>
+                    <span class="material-symbols-outlined">mail</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="footer-heading">Nuestra Empresa</h5>
+                        <a class="footer-link" href="#">Quienes Somos</a>
+                        <a class="footer-link" href="asesoriamigratoria.html">Asesoria Migratoria</a>
+                        <a class="footer-link" href="#">Renta de Autos</a>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="footer-heading">Servicios</h5>
+                        <a class="footer-link" href="#">Luna de Miel</a>
+                        <a class="footer-link" href="#">Cruceros</a>
+                        <a class="footer-link" href="#">Seguros</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5 class="footer-heading">Nuestras Oficinas</h5>
+                <div class="footer-office">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>San Salvador Office: Edificio World Trade Center, San Salvador.</p>
+                </div>
+                <div class="footer-office">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <p>Santa Ana Office: Centro Comercial Metrocentro, Santa Ana.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2026 Nexos. Todos los derechos reservados.
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>

@@ -1,0 +1,203 @@
+/* Configuración General */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Baloo 2', cursive;
+}
+
+/* Barra de Navegación */
+.navbar {
+    padding: 0.8rem 0;
+    background-color: #ffffff !important;
+}
+
+.navbar-brand {
+    color: #00408b !important;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: -0.5px;
+}
+
+/* Enlaces del Menú */
+.nav-link {
+    color: #4a4a4a !important;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 12px;
+    padding-bottom: 5px !important;
+    transition: color 0.3s ease;
+}
+
+/* Indicador anaranjado */
+.nav-link.active-custom {
+    border-bottom: 3px solid #bc4c2a; 
+    color: #00408b !important;
+}
+
+/* Botón de Acción */
+.btn-reserve {
+    background-color: #0056b3;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 22px;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Sección Hero */
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(90deg, rgba(4,22,63,.86) 0%, rgba(4,22,63,.56) 45%, rgba(4,22,63,.22) 100%),
+        url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilAPg5mNsM1w4LUL08JAAsNEEcJAy92qsuEPnNBwmfu3m4Ph1_GxYrW8Ugf2jGT8v_6Mza-qgQLLWgcSRNMjAraWN3BaULL0trQQTIcHwFuRL2u5I6WzyBCgaTw495vWSH-37l5ite5e2w/w0/beach-tropical-island-scenery-nature-56-4K.jpg') top center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 25% 30%, rgba(68,199,255,.18), transparent 28%);
+}
+
+/* info */ 
+
+/* Espaciado para la sección */
+.info-section {
+    padding-bottom: 80px;
+}
+
+/* Barra de info */
+.stats-bar {
+    border-radius: 10px;
+    margin-top: -60px; /* hace que se encime sobre la imagen de arriba */
+    position: relative;
+    z-index: 10;
+}
+
+.stat-number {
+    color: #00408b;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.stat-text {
+    color: #bc4c2a; 
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Título de sección */
+.section-title {
+    color: #00408b;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+/* Ajuste para móviles: quitar bordes laterales y margen negativo */
+@media (max-width: 768px) {
+    .stats-bar {
+        margin-top: 20px;
+    }
+    .border-end {
+        border: none !important;
+        border-bottom: 1px solid #dee2e6 !important;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Sección de Socios */
+.partners-section {
+    background-color: #f8f9fa !important; /* Gris muy claro de Bootstrap */
+}
+
+.section-title-sm {
+    color: #00408b;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* Contenedor para los logos */
+.partner-logo-container {
+    padding: 20px;
+    filter: none !important;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.partner-logo {
+    max-height: 50px; 
+    width: auto;
+}
+
+/* footer */
+
+/* Estilos del Footer */
+.footer-section {
+    background-color: #edf2f7; /* Azul muy pálido como en la imagen */
+    border-top: 1px solid #dee2e6;
+}
+
+.footer-title {
+    color: #00408b;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.footer-subtitle {
+    color: #00408b;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-link {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-divider {
+    border-top: 1px solid #cbd5e0;
+    opacity: 0.5;
+}
+
+.copyright-text {
+    color: #718096;
+    font-size: 0.85rem;
+}
+
+/* Iconos de contacto */
+.contact-item span:first-child {
+    font-size: 1.1rem;
+    filter: none !important;
+    opacity: 1;
+}
+/* ===== Responsive ===== */
+@media (max-width: 767.98px) {
+    .hero { min-height: 60vh; }
+    .stat-number { font-size: 1.5rem !important; }
+    .info-section { padding-top: 1.5rem; }
+}

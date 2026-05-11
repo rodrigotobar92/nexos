@@ -1,0 +1,367 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #161d1f; /* Color de texto base (on-surface) */
+    background-color: #f4fafd; /* Color de fondo base (surface) */
+}
+
+
+.vdm-header {
+    background-color: #ffffff; 
+    backdrop-filter: blur(24px); /* Efecto de panel de cristal */
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Borde sutil inferior */
+    height: 80px; /* Altura fija para la cabecera */
+    display: flex;
+    align-items: center;
+}
+
+
+.vdm-logo {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 900; /* Peso extra-bold para el logo */
+    font-size: 24px;
+    color: #00408b !important; /* El color azul 'primary' exacto */
+    letter-spacing: -0.5px;
+}
+
+.logo-nav {
+    height: 40px;      /* Ajusta esta altura según el diseño de tu header */
+    width: auto;       /* Mantiene la proporción original */
+    display: block;    /* Evita espacios extra debajo de la imagen */
+    object-fit: contain;
+}
+
+.vdm-nav-links .nav-link {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700; /* Negrita para los enlaces */
+    font-size: 14px;
+    color: #424752; /* Color de texto de enlace (on-surface-variant) */
+    padding: 8px 16px !important;
+    transition: color 0.2s ease;
+    letter-spacing: -0.2px;
+}
+
+/* Efecto hover general */
+.vdm-nav-links .nav-link:hover {
+    color: #00408b; /* Cambia al azul 'primary' */
+}
+
+/* Estilo para el enlace activo */
+.vdm-nav-links .nav-link.active {
+    color: #00408b !important; /* Azul 'primary' */
+    border-bottom: 2px solid #fe6a34; /* Borde naranja 'secondary' inferior exacto */
+    border-radius: 0;
+    padding-bottom: 1px !important; /* Ajuste sutil para que el borde no baje demasiado */
+}
+
+
+.vdm-icon {
+    font-size: 20px;
+    color: #424752; /* Color de los iconos */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.vdm-icon:hover {
+    color: #00408b; /* Cambia al azul 'primary' en hover */
+}
+
+.vdm-btn-contact {
+    background-color: #00408b; /* Azul 'primary' exacto */
+    color: #ffffff; /* Texto blanco */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 24px;
+    border-radius: 0.5rem; /* rounded-lg */
+    transition: all 0.2s ease;
+    border: none;
+}
+
+/* Efecto hover para el botón */
+.vdm-btn-contact:hover {
+    background-color: #00306b; /* Un azul un poco más oscuro para el hover */
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave en hover */
+}
+
+/*rsponsive*/
+
+@media (max-width: 991.98px) {
+    .vdm-nav-links {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin-top: 1rem;
+    }
+    
+    .vdm-nav-links .nav-link.active {
+        border-bottom: none; /* Quitamos el borde naranja en vertical */
+        border-left: 3px solid #fe6a34; /* Y lo ponemos a la izquierda */
+        padding-left: 12px !important;
+    }
+}
+/*Hero*/
+
+.vdm-hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/61107d07-d94b-4a31-8679-c134feb97e00/public');
+    background-size: cover;
+    background-position: top center;
+    color: white;
+}
+
+.vdm-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 25% 30%, rgba(68,199,255,.18), transparent 28%),
+        linear-gradient(90deg, rgba(4,22,63,.86) 0%, rgba(4,22,63,.56) 45%, rgba(4,22,63,.22) 100%);
+}
+
+.vdm-hero-title {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800;
+    font-size: clamp(1.875rem, 5vw, 3.5rem);
+    letter-spacing: -1px;
+}
+
+.vdm-hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* boton anaranjado*/
+.vdm-btn-orange {
+    background-color: #fe6a34; /* Naranja secundario */
+    color: white;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 12px;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vdm-btn-orange:hover {
+    background-color: #e55a29;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(254, 106, 52, 0.3);
+}
+
+/*tarjetas*/
+
+.vdm-tag {
+    color: #fe6a34;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.vdm-section-title {
+    color: #00408b;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.vdm-card {
+    border: 1px solid #eee;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.vdm-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-color: rgba(0, 64, 139, 0.1);
+}
+
+.vdm-card-icon {
+    font-size: 2rem;
+    color: #00408b;
+}
+
+.vdm-link {
+    color: #00408b;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.vdm-stepper-section {
+    background-color: #f0f7f9; /* Color de fondo suave de tu imagen */
+}
+
+.vdm-stepper-container {
+    position: relative;
+}
+
+/* La línea azul del fondo */
+@media (min-width: 768px) {
+    .vdm-stepper-container::before {
+        content: "";
+        position: absolute;
+        top: 40px; /* Alineado al centro de los círculos */
+        left: 10%;
+        right: 10%;
+        height: 2px;
+        background-color: #adc7ff; /* Azul claro de la línea */
+        z-index: 0;
+    }
+}
+
+.vdm-step {
+    position: relative;
+    z-index: 1;
+}
+
+.vdm-step-number {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 auto 20px;
+    box-shadow: 0 8px 20px rgba(0, 64, 139, 0.2);
+    font-family: 'Baloo 2', cursive;
+}
+
+/* Estilo para el paso 4 (el círculo clarito) */
+.vdm-step-light {
+    background-color: #adc7ff;
+    color: #00408b;
+}
+
+.vdm-step h4 {
+    color: #00408b;
+    margin-bottom: 15px;
+}
+
+/* --- CTA Formal --- */
+.vdm-cta-formal {
+    background-color: #003366; /* Azul marino más sobrio */
+}
+
+.op-80 {
+    opacity: 0.8;
+}
+
+/* Botón sólido (Naranja pero sin efectos de escala) */
+.vdm-btn-primary-alt {
+    background-color: #fe6a34;
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 6px; /* Borde estándar, más serio */
+    border: none;
+}
+
+.vdm-btn-primary-alt:hover {
+    background-color: #e55a29;
+    color: white;
+}
+
+/* Botón esquema blanco */
+.vdm-btn-outline-light-formal {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 6px;
+}
+
+.vdm-btn-outline-light-formal:hover {
+    background-color: white;
+    color: #00408b;
+}
+
+/* --- Newsletter Formal --- */
+.vdm-newsletter-formal {
+    background-color: #f8f9fa; /* Gris muy tenue, casi blanco */
+    border-top: 1px solid #dee2e6;
+}
+
+.vdm-input-formal {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+
+.vdm-btn-dark {
+    background-color: #001a41;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    height: 100%;
+}
+
+.vdm-btn-dark:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* --- Estilos del Footer --- */
+.vdm-footer {
+    background-color: #0c121d; 
+    border-top: 4px solid #00408b; /* Línea de acento en el azul */
+}
+
+.vdm-footer h6 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fe6a34; 
+}
+
+.op-70 { opacity: 0.7; }
+.op-60 { opacity: 0.6; }
+.op-50 { opacity: 0.5; }
+.op-10 { opacity: 0.1; }
+
+.x-small {
+    font-size: 11px;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+/* Badge de Confianza Simplificado */
+.vdm-trust-badge {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+/* Interacción sutil en los enlaces */
+.vdm-footer a {
+    transition: all 0.2s;
+}
+
+.vdm-footer a:hover {
+    opacity: 1 !important;
+    color: #fe6a34 !important;
+    padding-left: 5px; /* Pequeño movimiento al pasar el mouse */
+}
+/* ===== Responsive ===== */
+@media (max-width: 767.98px) {
+    .vdm-hero { min-height: 70vh; }
+    .vdm-hero-subtitle { font-size: 1rem; }
+    .vdm-section-title { font-size: 1.5rem; }
+    .vdm-card { padding: 2rem !important; }
+    .vdm-stepper-section { padding: 3rem 0; }
+}
